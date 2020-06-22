@@ -1,0 +1,9 @@
+Dung mot ung dung nodejs
+	- Server:
+		+ Tinh chu vi, dien tich hinh chu nhat
+		+ home page la trang web co 2 duong link
+		+ Tinh dien tich va chu vi
+	- Client: 
+		+ Submit web form chuyen den server voi tham so 2 canh
+		+ Server: doc du lieu tu client gui den va tra ve ket qua tinh toan duoc duoi dang web page va co mot duong link trong trang web nay de tro ve home page
+

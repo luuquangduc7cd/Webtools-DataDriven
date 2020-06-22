@@ -1,0 +1,31 @@
+{
+    "books": [
+        {
+            "id": 16019921,
+            "name": "Chỉ có thể là yêu",
+            "author": {
+                "id": "hannhu",
+                "name": "Hân Như"
+            },
+            "price": 1000000
+        },
+        {
+            "id": 16019922,
+            "name": "Điều bí mật",
+            "author": {
+                "id": "hannhu",
+                "name": "Hân Như"
+            },
+            "price": 1100000
+        },
+        {
+            "id": 16019923,
+            "name": "Hẹn em ngày nắng",
+            "author": {
+                "id": "maimei",
+                "name": "Mai Mei"
+            },
+            "price": 1200000
+        }
+    ]
+}

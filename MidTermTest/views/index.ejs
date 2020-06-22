@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <script src="/static/js/bootstrap.min.js"></script>
+    <title><%- localData.title %></title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1><%- localData.content %></h1>
+        </div>
+        <nav class="navbar navbar-expand">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">Books</a>
+              </div>
+            <form action="/search" method="get" class="form-inline">
+                <div class="form-group">
+                    <input class="form-control" type="text" name="search" id="search" placeholder="Nhập tên sách cần tìm">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary">Tìm</button>
+                </div>
+            </form>
+        </nav>
+        <table class="table">
+            <thead>
+                <tr>
+                    <td>Mã sách</td>
+                    <td>Tên sách</td>
+                    <td>Tác giả</td>
+                    <td>Giá</td>
+                </tr>
+            </thead>
+            <tbody>
+                <% if(data) {%>
+                <% data.forEach(element => { %>
+                <tr>
+                    <td><%= element.id %></td>
+                    <td><%= element.name %></td>
+                    <td><%= element.author.name %></td>
+                    <td><%= element.price %></td>
+                </tr>
+                <%})%>
+                <% } %>
+            </tbody>
+        </table>
+        <form action="/add" method="POST">
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="bid">Mã sách:</label>
+                        <input type="text" class="form-control" id="bid" name="bid">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="bname">Tên sách:</label>
+                        <input type="text" class="form-control" id="bname" name="bname">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="aid">Mã tác giả:</label>
+                        <input type="text" class="form-control" id="aid" name="aid">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="aname">Tên tác giả:</label>
+                        <input type="text" class="form-control" id="aname" name="aname">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="bprice">Giá</label>
+                <input class="form-control" id="bprice" name="bprice">
+            </div>
+            <div class="form-group">
+                <button class="btn btn-block btn-success" type="submit">Thêm</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

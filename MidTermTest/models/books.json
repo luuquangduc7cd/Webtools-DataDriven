@@ -1,0 +1,40 @@
+{
+    "books": [
+        {
+            "id": 1,
+            "name": "Chỉ có thể là yêu",
+            "author": {
+                "id": 1,
+                "name": "Hân Như"
+            },
+            "price": 150000
+        },
+        {
+            "id": 2,
+            "name": "Cảm xúc là kẻ thù số 1 của thành công",
+            "author": {
+                "id": 22,
+                "name": "Lê Thẩm Dương"
+            },
+            "price": 200000
+        },
+        {
+            "id": 3,
+            "name": "Giấu anh vào trong nỗi nhớ của em",
+            "author": {
+                "id": 1,
+                "name": "Hân Như"
+            },
+            "price": 250000
+        },
+        {
+            "id": 4,
+            "name": "Mãi mãi là bao xa",
+            "author": {
+                "id": 3,
+                "name": "Diệp Lạc Vô Tâm"
+            },
+            "price": 200000
+        }
+    ]
+}

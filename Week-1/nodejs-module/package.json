@@ -1,0 +1,11 @@
+{
+  "name": "nodejs-module",
+  "version": "1.0.0",
+  "description": "node module in concept",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index"
+  },
+  "author": "Duc Luu Quang",
+  "license": "ISC"
+}
